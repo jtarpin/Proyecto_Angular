@@ -1,0 +1,74 @@
+.ver-personajes {
+  background-color: #ffffff;
+  text-align: center;
+  font-size: 50px;
+
+}
+
+body{
+  background-color: #136bdf;
+
+}
+
+.btn {
+  background-color: #0070e7;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 5px;
+  transition: background-color 0.3s;
+}
+.prev-page {
+  background-color: #ffc107;
+}
+
+.next-page {
+  background-color: #17a2b8;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.personaje {
+  border: 1px solid #0bec43;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  text-align: center;
+  width: 200px;
+  flex: 0 1 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.personaje img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.personaje h3,
+.personaje p {
+  margin: 5px 0;
+}
+
+.personajes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+

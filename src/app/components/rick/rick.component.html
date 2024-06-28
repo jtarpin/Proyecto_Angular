@@ -1,0 +1,25 @@
+
+<body>
+<h4 class="ver-personajes">
+  RICK AND MORTY
+</h4>
+
+<div class="pagination">
+  <button (click)="irA(prevPage)" *ngIf="prevPage" class="btn prev-page">
+    Previous
+  </button>
+  <button (click)="irA(nextPage)" *ngIf="nextPage" class="btn next-page">
+    Next
+  </button>
+</div>
+
+<div class="personajes-container">
+  <div *ngFor="let personaje of listaPersonajes" class="personaje">
+    <h3>{{ personaje.name }} </h3>
+    <img [src]="personaje.image" alt="{{ personaje.name }}">
+    <p>Status: {{ personaje.status }}</p>
+    <p>Species: {{ personaje.species }}</p>
+    <p>Gender: {{ personaje.gender }}</p>
+  </div>
+</div>
+</body>
